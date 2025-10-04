@@ -19,7 +19,11 @@
 
 #ifndef _USER_CONFIG_OVERRIDE_H_
 #define _USER_CONFIG_OVERRIDE_H_
-
+// user_config_override.h
+#define USE_MODBUS_BRIDGE       // 启用Modbus桥接功能
+#define USE_MODBUS_BRIDGE_TCP   // 可选，启用Modbus TCP功能
+#define MODBUS_SERIAL_TIMEOUT_MS 1000  // 响应超时时间
+#define MBR_RECEIVE_BUFFER_SIZE 256    // 接收缓冲区大小
 /*****************************************************************************************************\
  * USAGE:
  *   To modify the stock configuration without changing the my_user_config.h file:
